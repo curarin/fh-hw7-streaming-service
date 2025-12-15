@@ -39,6 +39,10 @@ public class FileWriter {
                 }
             }
         }
+        System.out.printf(
+                "File successfully written to '%s'.\n",
+                path)
+        ;
     }
 
     private static void writeData(Song song, BufferedWriter bw) throws IOException {

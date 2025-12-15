@@ -29,10 +29,11 @@ public class Application {
                 case 2 -> {
                     int genreMenuInput = menu.getGenreMenu();
                     switch (genreMenuInput) {
-                        case 1 -> output.printSongsByGenre(charts.generateChartsByGenre(Genre.ROCK));
-                        case 2 -> output.printSongsByGenre(charts.generateChartsByGenre(Genre.POP));
-                        case 3 -> output.printSongsByGenre(charts.generateChartsByGenre(Genre.INDIE));
-                        case 4 -> output.printSongsByGenre(charts.generateChartsByGenre(Genre.NINETIES));
+                        case 1 -> output.printSongsByGenre(charts.generateSongsByGenre(Genre.ROCK));
+                        case 2 -> output.printSongsByGenre(charts.generateSongsByGenre(Genre.POP));
+                        case 3 -> output.printSongsByGenre(charts.generateSongsByGenre(Genre.INDIE));
+                        case 4 -> output.printSongsByGenre(charts.generateSongsByGenre(Genre.NINETIES));
+                        default -> System.out.println("Invalid menu input");
                     }
                 }
                 case 3 -> {
@@ -42,6 +43,7 @@ public class Application {
                         case 2 -> output.printTopChartSongsByGenre(charts.generateChartsByGenre(Genre.POP));
                         case 3 -> output.printTopChartSongsByGenre(charts.generateChartsByGenre(Genre.INDIE));
                         case 4 -> output.printTopChartSongsByGenre(charts.generateChartsByGenre(Genre.NINETIES));
+                        default -> System.out.println("Invalid menu input");
                     }
                 }
                 case 4 -> {

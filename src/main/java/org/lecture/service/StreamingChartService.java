@@ -13,6 +13,17 @@ public class StreamingChartService {
         this.allSongs = allSongs;
     }
 
+    public ArrayList<Song> generateSongsByGenre(Genre genre) {
+        ArrayList<Song> filteredSongs = new ArrayList<>();
+
+        for (Song song : allSongs) {
+            if (song.getGenre().equals(genre)) {
+                filteredSongs.add(song);
+            }
+        }
+        return filteredSongs;
+    }
+
     public ArrayList<Song> generateChartsByGenre(Genre genre) {
         // Gefragt ist eigentlich eine Sorted Map
         // MVP machen wir mal so, wenn noch Zeit ist wirds refactored
