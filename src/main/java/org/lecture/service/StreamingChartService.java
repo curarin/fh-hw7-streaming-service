@@ -4,7 +4,6 @@ import org.lecture.model.Genre;
 import org.lecture.model.Song;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
@@ -53,16 +52,12 @@ public class StreamingChartService {
                     }
                 }
                 if (!songAlreadyExists) {
-                    filteredSongs.add(song);
+                    chartsByGenreMap.put(song.getStreamCounter(), song);
                     allStreamingCounters.add(song.getStreamCounter());
                 }
             }
         }
-        filteredSongs.sort(Comparator.comparingInt(Song::getStreamCounter));
-        for (Song song : filteredSongs) {
-            chartsByGenreMap.put(song.getStreamCounter(), song);
-        }
-        return chartsByGenreMap;
+        return chartsByGenreMap.reversed();
     }
 
     public ArrayList<Song> generateChartsByStreamingCount(int count) {

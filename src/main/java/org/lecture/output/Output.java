@@ -49,7 +49,7 @@ public class Output {
                 songs.firstEntry().getValue().getGenre()
         );
 
-        int position = songs.size();
+        int position = 1;
         for (SortedMap.Entry<Integer, Song> entry : songs.entrySet()) {
             System.out.printf(
                     "Nr. %d: %s - %s (Streaming-Counter: %d)\n",
@@ -58,7 +58,7 @@ public class Output {
                     entry.getValue().getSongTitle(),
                     entry.getValue().getStreamCounter()
             );
-            position--;
+            position++;
         }
         System.out.println();
 
