@@ -1,0 +1,106 @@
+<strong>
+Artist: TLC
+Album: CrazySexyCool
+	Song# 59
+		Song: Waterfalls
+Stream-Counter: 56
+</strong>
+
+Artist: Oasis
+Album: (What's the Story) Morning Glory?
+	Song# 46
+		Song: Wonderwall
+Stream-Counter: 32
+
+Artist: Shania Twain
+Album: Come On Over
+	Song# 60
+		Song: You're Still the One
+Stream-Counter: 49
+
+<strong>
+Artist: Spice Girls
+Album: Spice
+	Song# 57
+		Song: Wannabe
+Stream-Counter: 59
+</strong>
+
+Artist: Red Hot Chili Peppers
+Album: Californication
+	Song# 51
+		Song: Scar Tissue
+Stream-Counter: 41
+
+Artist: Backstreet Boys
+Album: Millennium
+	Song# 56
+		Song: I Want It That Way
+Stream-Counter: 06
+
+<strong>
+Artist: R.E.M.
+Album: Automatic for the People
+	Song# 54
+		Song: Everybody Hurts
+Stream-Counter: 63
+</strong>
+
+<strong>
+Artist: Green Day
+Album: Dookie
+	Song# 50
+		Song: Basket Case
+Stream-Counter: 69
+</strong>
+
+Artist: Nirvana
+Album: Nevermind
+	Song# 58
+		Song: Come as You Are
+Stream-Counter: 09
+
+Artist: Pearl Jam
+Album: Ten
+	Song# 49
+		Song: Jeremy
+Stream-Counter: 45
+
+<strong>
+Artist: Smashing Pumpkins
+Album: Mellon Collie and the Infinite Sadness
+	Song# 53
+		Song: 1979
+Stream-Counter: 68
+</strong>
+
+<strong>
+Artist: The Cranberries
+Album: No Need to Argue
+	Song# 52
+		Song: Zombie
+Stream-Counter: 53
+</strong>
+
+<strong>
+Artist: Blur
+Album: Parklife
+	Song# 47
+		Song: Girls & Boys
+Stream-Counter: 56
+</strong>
+
+Artist: Alanis Morissette
+Album: Jagged Little Pill
+	Song# 48
+		Song: You Oughta Know
+Stream-Counter: 37
+
+<strong>
+Artist: No Doubt
+Album: Tragic Kingdom
+	Song# 55
+		Song: Don't Speak
+Stream-Counter: 60
+</strong>
+

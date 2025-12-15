@@ -1,0 +1,94 @@
+Artist: The Doors
+Album: The Doors
+	Song# 11
+		Song: Light My Fire
+Stream-Counter: 14
+
+Artist: Pink Floyd
+Album: The Dark Side of the Moon
+	Song# 06
+		Song: Time
+Stream-Counter: 38
+
+<strong>
+Artist: Bon Jovi
+Album: Slippery When Wet
+	Song# 13
+		Song: Livin' on a Prayer
+Stream-Counter: 51
+</strong>
+
+Artist: AC/DC
+Album: Back in Black
+	Song# 03
+		Song: Back in Black
+Stream-Counter: 03
+
+<strong>
+Artist: Led Zeppelin
+Album: Led Zeppelin IV
+	Song# 01
+		Song: Stairway to Heaven
+Stream-Counter: 52
+</strong>
+
+Artist: Queen
+Album: A Night at the Opera
+	Song# 02
+		Song: Bohemian Rhapsody
+Stream-Counter: 46
+
+Artist: Lynyrd Skynyrd
+Album: (Pronounced 'Lĕh-'nérd 'Skin-'nérd)
+	Song# 14
+		Song: Free Bird
+Stream-Counter: 39
+
+Artist: The Eagles
+Album: Hotel California
+	Song# 15
+		Song: Hotel California
+Stream-Counter: 47
+
+Artist: Nirvana
+Album: Nevermind
+	Song# 05
+		Song: Smells Like Teen Spirit
+Stream-Counter: 16
+
+Artist: The Rolling Stones
+Album: Let It Bleed
+	Song# 04
+		Song: Gimme Shelter
+Stream-Counter: 17
+
+Artist: Guns N' Roses
+Album: Appetite for Destruction
+	Song# 07
+		Song: Sweet Child o' Mine
+Stream-Counter: 39
+
+Artist: Van Halen
+Album: 1984
+	Song# 12
+		Song: Jump
+Stream-Counter: 21
+
+Artist: The Who
+Album: Who's Next
+	Song# 08
+		Song: Baba O'Riley
+Stream-Counter: 28
+
+Artist: U2
+Album: The Joshua Tree
+	Song# 09
+		Song: With or Without You
+Stream-Counter: 49
+
+Artist: Aerosmith
+Album: Toys in the Attic
+	Song# 10
+		Song: Walk This Way
+Stream-Counter: 25
+
