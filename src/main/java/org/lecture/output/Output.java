@@ -1,6 +1,7 @@
 package org.lecture.output;
 import org.lecture.model.Song;
 import java.util.ArrayList;
+import java.util.SortedMap;
 
 public class Output {
     public void printAllSongs(ArrayList<Song> songs) {
@@ -42,16 +43,20 @@ public class Output {
         }
     }
 
-    public void printTopChartSongsByGenre(ArrayList<Song> songs) {
-        System.out.printf("\n\n------ GENRE: %s ------\n", songs.getFirst().getGenre());
+    public void printTopChartSongsByGenre(SortedMap<Integer, Song> songs) {
+        System.out.printf(
+                "\n\n------ GENRE: %s ------\n",
+                songs.firstEntry().getValue().getGenre()
+        );
+
         int position = songs.size();
-        for (Song song : songs) {
+        for (SortedMap.Entry<Integer, Song> entry : songs.entrySet()) {
             System.out.printf(
                     "Nr. %d: %s - %s (Streaming-Counter: %d)\n",
                     position,
-                    song.getArtist().getArtistName(),
-                    song.getSongTitle(),
-                    song.getStreamCounter()
+                    entry.getValue().getArtist().getArtistName(),
+                    entry.getValue().getSongTitle(),
+                    entry.getValue().getStreamCounter()
             );
             position--;
         }

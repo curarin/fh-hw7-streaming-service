@@ -5,6 +5,8 @@ import org.lecture.model.Song;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.SortedMap;
+import java.util.TreeMap;
 
 public class StreamingChartService {
     ArrayList<Song> allSongs;
@@ -24,13 +26,16 @@ public class StreamingChartService {
         return filteredSongs;
     }
 
-    public ArrayList<Song> generateChartsByGenre(Genre genre) {
-        // Gefragt ist eigentlich eine Sorted Map
-        // MVP machen wir mal so, wenn noch Zeit ist wirds refactored
+    public SortedMap<Integer, Song> generateChartsByGenre(Genre genre) {
+        // Konzept: Wir loopen durch alle vorhandenen Songs & speichern nur die gewünschten nach Genre weg
+        // wir speichern außerdem die Streaming Counter weg und überprüfen hier, ob es Duplikate gibt
+        // Duplikate werden verworfen (Check mittels Bool)
+        // Anschließend bauen wir eine Sorted Map mit dem Counter als Key und dem Object als Value
         ArrayList<Song> filteredSongs = new ArrayList<>();
         ArrayList<Integer> allStreamingCounters = new ArrayList<>();
+        SortedMap<Integer, Song> chartsByGenreMap = new TreeMap<>();
 
-        for (Song song : allSongs) {
+        for (Song song : this.allSongs) {
             boolean songAlreadyExists = false;
             if (song.getGenre().equals(genre)) {
                 for (Integer allStreamingCounter : allStreamingCounters) {
@@ -54,7 +59,10 @@ public class StreamingChartService {
             }
         }
         filteredSongs.sort(Comparator.comparingInt(Song::getStreamCounter));
-        return filteredSongs;
+        for (Song song : filteredSongs) {
+            chartsByGenreMap.put(song.getStreamCounter(), song);
+        }
+        return chartsByGenreMap;
     }
 
     public ArrayList<Song> generateChartsByStreamingCount(int count) {
